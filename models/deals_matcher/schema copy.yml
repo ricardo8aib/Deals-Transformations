@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: deals_properties
+    description: "Table with all HubSpot deals and descriptions"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+      - name: dealname
+        description: "Name of the deal"
+      - name: role_description
+        description: "Description of the role"
+      - name: closedate
+        description: "Deal's close date"
+      - name: dealstage
+        description: "Deal's stage"
+      - name: department
+        description: "Deal's department"
+      - name: hs_priority
+        description: "Deal's priority"
+      - name: hs_next_step
+        description: "Following steps in the process"

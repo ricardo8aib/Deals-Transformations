@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: flattened_airbyte_data
+    description: "Intermediate step to get deals properties"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+      - name: archived
+        description: "Boolean that indicates if the deal is archived"
+      - name: createdAt
+        description: "Creation timestamp"
+      - name: updatedAt
+        description: "Last update timestamp"
+      - name: properties
+        description: "JSON object with deals properties"

@@ -1,0 +1,21 @@
+
+version: 2
+
+sources:
+  - name: airbyte
+    database: test
+    schema: test_deals_matcher
+    tables:
+      - name: _airbyte_raw_deals
+      - name: deals
+
+models:
+  - name: stg_raw_deals
+    description: "Staging table for future models"
+    columns:
+      - name: _airbyte_ab_id
+        description: "The primary key for this table"
+      - name: _airbyte_data
+        description: "A column that contains the JSONs records from S3"
+      - name: _airbyte_emitted_at
+        description: "Emitted timestamp"
