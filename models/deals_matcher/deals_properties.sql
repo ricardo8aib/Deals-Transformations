@@ -7,4 +7,4 @@ select
 	properties::json->>'department' as department,
     properties::json->>'hs_priority' as hs_priority,
     properties::json->>'hs_next_step' as hs_next_step
-from {{ ref('flattened_airbyte_data') }} 
+from {{ ref('only_deals') }} 

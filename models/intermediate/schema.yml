@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: flattened_airbyte_data
+  - name: raw_deals_flattened
     description: "Intermediate step to get deals properties"
     columns:
       - name: id
@@ -15,3 +15,5 @@ models:
         description: "Last update timestamp"
       - name: properties
         description: "JSON object with deals properties"
+      - name: deals
+        description: "Column with the list of deals associated to a note"
